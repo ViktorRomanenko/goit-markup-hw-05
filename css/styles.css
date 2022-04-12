@@ -89,7 +89,7 @@ img {
   padding: 0;
   overflow: hidden;
   border: 0;
-  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
 }
 .team-social-list {
   display: flex;
@@ -536,7 +536,6 @@ position: relative;
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
-  transform: translateX(0%), rotate(360deg);
   transition: visibility 250ms linear, transform 250ms linear, opacity 250ms linear;
 }
 .is-hidden {
