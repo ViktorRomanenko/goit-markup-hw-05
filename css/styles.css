@@ -156,7 +156,7 @@ img {
   box-sizing: border-box;
   border-radius: 4px;
   color: var(--icon-color);
-  transition: var(--transition);
+  transition: color var(--transition);
 }
 .client-list,
 .nav-list-item,
@@ -168,10 +168,7 @@ img {
   margin-right: 10px;
   fill: currentColor;
 }
-.our-team .social-link:hover .social-icon,
-.our-team .social-link:focus .social-icon {
-  fill: var(--color-white);
-}
+
 .header-cont-list {
   display: flex;
   margin-left: auto;
@@ -209,6 +206,17 @@ position: relative;
   background-color: var(--dark-bg-col);
 }
 .modal-btn {
+  font-family: inherit;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--color-white);
+  background: var(--accent-color);
   margin-left: auto;
   margin-right: auto;
   padding: 10px 32px;
@@ -327,19 +335,6 @@ position: relative;
   border: 1px solid #eeeeee;
   background-color: var(--color-white);
 }
-.modal-btn {
-  font-family: inherit;
-  cursor: pointer;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.87;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: var(--color-white);
-  background: var(--accent-color);
-}
 .filter-btn {
   padding: 6px 22px;
   border-radius: 4px;
@@ -389,10 +384,12 @@ position: relative;
 .social-link:hover,
 .social-link:focus {
   background-color: var(--accent-color);
+  color: var(--color-white);
 }
 .work-link {
   display: flex;
   flex-direction: column;
+  transition: box-shadow var(--transition);
 }
 
 .social-icon {
